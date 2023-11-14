@@ -36,7 +36,15 @@ header a {
   display: inline-block;
   margin: 32px;
 }
-@media (max-width: 800px) {
+
+footer {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/images/footer.jpg");
+  background-size: cover;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
