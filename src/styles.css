@@ -9,10 +9,17 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 5px;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
 }
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 50px;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
@@ -79,6 +86,9 @@ footer a {
   color: white;
   text-decoration: none;
 }
+.imgresponsive {
+  max-width: 100%;
+}
 
 @media (max-width: 960px) {
   header {
@@ -89,5 +99,11 @@ footer a {
   }
   header h3 {
     font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .grid2 {
+    grid-template-columns: 1fr;
   }
 }
