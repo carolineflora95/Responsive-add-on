@@ -9,17 +9,29 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
-  grid-gap: 5px;
+  grid-gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .grid2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
-}
-section {
   max-width: 1200px;
   margin: 0 auto;
+}
+section {
+  max-width: 100%;
+  margin: 0 auto;
   padding: 50px;
+}
+section.secondary {
+}
+.text-center {
+  text-align: center;
+}
+.embed {
+  margin: 10px 10px;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
@@ -44,15 +56,33 @@ header h3 {
   letter-spacing: 1px;
   margin: 0;
 }
-header a {
+.button {
   background-color: blueviolet;
   padding: 10px;
+  margin: 0 auto;
   border-radius: 7px;
   text-transform: uppercase;
   display: inline-block;
-  margin: 32px;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
 }
 
+.button:hover {
+  background-color: darkviolet;
+  text-decoration: none;
+}
+.card {
+  background-color: #f8f5ff;
+  text-align: center;
+}
+.cardImage {
+  max-width: 400px;
+}
+.card p {
+  margin: 10px;
+}
 footer {
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
