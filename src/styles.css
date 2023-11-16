@@ -32,6 +32,7 @@ section.secondary {
 }
 .embed {
   margin: 10px 10px;
+  max-width: 100%;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
@@ -78,7 +79,7 @@ header h3 {
   text-align: center;
 }
 .cardImage {
-  max-width: 400px;
+  max-width: 100%;
   filter: opacity(90%);
   filter: brightness(1.2);
 }
@@ -137,5 +138,11 @@ footer a {
   }
   .grid2 {
     grid-template-columns: 1fr;
+  }
+  .card {
+    max-width: 300px;
+  }
+  .embed {
+    display: none;
   }
 }
